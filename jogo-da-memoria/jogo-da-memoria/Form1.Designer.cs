@@ -23,6 +23,7 @@
         /// o conteúdo deste método com o editor de código.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel_principal = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,6 +41,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel_principal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -272,6 +274,11 @@
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label16.Click += new System.EventHandler(this.cardClick);
             // 
+            // timer
+            // 
+            this.timer.Interval = 750;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // JogoDaMemoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,6 +311,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer;
     }
 }
 
