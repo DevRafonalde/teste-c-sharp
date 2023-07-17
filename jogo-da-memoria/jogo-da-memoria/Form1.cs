@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace jogo_da_memoria {
@@ -14,7 +9,7 @@ namespace jogo_da_memoria {
         Label primeiroClique = null;
         Label segundoClique = null;
         Random random = new Random();
-        List<string> cards = new List<string>() {"!", "!", "N", "N", ",", ",", "k", "k", "b", "b", "v", "v", "w", "w", "z", "z"};
+        List<string> cards = new List<string>() { "!", "!", "N", "N", ",", ",", "k", "k", "b", "b", "v", "v", "w", "w", "z", "z" };
 
         private void inserirIcones() {
             foreach (Control control in tableLayoutPanel_principal.Controls) {

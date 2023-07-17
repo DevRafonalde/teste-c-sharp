@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace jogo_da_memoria {
+namespace relatorio_oficios_cs {
     internal static class Program {
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
@@ -10,7 +13,7 @@ namespace jogo_da_memoria {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new JogoDaMemoria());
+            Application.Run(new Form1());
         }
     }
 }
