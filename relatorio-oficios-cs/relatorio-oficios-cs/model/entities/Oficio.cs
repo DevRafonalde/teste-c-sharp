@@ -11,11 +11,11 @@ namespace relatorio_oficios_cs {
             get; set;
         }
 
-        public int protocoloTitulo {
+        public int? protocoloTitulo {
             get; set;
         }
 
-        public int protocoloCertidao {
+        public int? protocoloCertidao {
             get; set;
         }
 

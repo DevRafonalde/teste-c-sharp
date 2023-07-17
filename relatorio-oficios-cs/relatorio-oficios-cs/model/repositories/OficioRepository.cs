@@ -23,7 +23,7 @@ namespace relatorio_oficios_cs.model.repositories {
                     string conteudo = response.Content.ReadAsStringAsync().Result;
 
                     if (conteudo.Length > 2) {
-                        string[] arr = conteudo.Substring(1, conteudo.Length - 2).Replace(";", "").Replace("},", "};").Split(';');
+                        string[] arr = conteudo.Substring(1, conteudo.Length - 2).Replace(";", "").Replace("},", "};").Replace("emitido\":null", "emitido\":false").Split(';');
                         List<Oficio> lista = arr.Select(json => JsonSerializer.Deserialize<Oficio>(json)).Where(oficio => oficio != null)
                             .OrderBy(oficio => oficio.numero)
                             .ToList();

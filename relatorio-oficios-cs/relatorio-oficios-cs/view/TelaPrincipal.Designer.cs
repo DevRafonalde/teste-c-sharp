@@ -1,5 +1,5 @@
 ﻿namespace relatorio_oficios_cs {
-    partial class Form1 {
+    partial class TelaPrincipal {
         /// <summary>
         /// Variável de designer necessária.
         /// </summary>
