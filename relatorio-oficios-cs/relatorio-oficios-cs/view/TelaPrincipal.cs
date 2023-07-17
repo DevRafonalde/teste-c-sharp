@@ -31,8 +31,6 @@ namespace relatorio_oficios_cs {
             dataGridView_resultados.Columns["dataFinalizacao"].Visible = false;
             dataGridView_resultados.Columns["oficioVinculadoId"].Visible = false;
             dataGridView_resultados.Columns["numeroOficioCadastrado"].Visible = false;
-            //dataGridView_resultados.Columns["usuarioFinalizacao"].Visible = false;
-            //dataGridView_resultados.Columns["usuarioFinalizacao"].Visible = false;
 
             for (int i = 0; i < dataGridView_resultados.RowCount; i++) {
                 if (oficios[i].recebido) {
