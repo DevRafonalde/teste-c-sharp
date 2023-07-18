@@ -75,6 +75,13 @@ namespace relatorio_oficios_cs {
             get; set;
         }
 
+        public string nOficioEnviado {
+            get; set;
+        }
+        public string nOficioRecebido {
+            get; set;
+        }
+
         public Oficio JsonDesserializar(string json) {
             return JsonSerializer.Deserialize<Oficio>(json);
         }

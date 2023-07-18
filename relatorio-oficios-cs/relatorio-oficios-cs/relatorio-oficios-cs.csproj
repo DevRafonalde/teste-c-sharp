@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\Controller.cs" />
+    <Compile Include="helpers\RespostasHelper.cs" />
     <Compile Include="model\repositories\OficioRepository.cs" />
     <Compile Include="view\TelaPrincipal.cs">
       <SubType>Form</SubType>
